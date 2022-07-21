@@ -23,9 +23,8 @@ const Counter = () => {
     };
 
     return (
-        <>   <div className="password">
+        <>
             <ShowPassword value={password}/>
-        </div>
             <div className="buttons">
             {BUTTONS.map(value => (
                 <Button key={value} value={value} click={addNumber}></Button>

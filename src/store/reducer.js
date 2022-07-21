@@ -14,7 +14,6 @@ const reducer = (state = initialState, action) => {
     }
     if (action.type === 'VERIFY') {
         if (state.password === PASSWORD) {
-
             return {...state, password: 'Access Granted'};
         } else {
             return {...state, password: 'Access Denied'};
